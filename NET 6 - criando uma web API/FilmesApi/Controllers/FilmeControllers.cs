@@ -19,4 +19,13 @@ public class FilmeController : ControllerBase
         Console.WriteLine($"{filme.Titulo}");
     }
 
+    [HttpGet]
+    public void ExibirFilme()
+    {
+        foreach (Filme filme in filmes)
+        {
+            Console.WriteLine($"{filme.Titulo}");
+        }
+    }
+
 }
