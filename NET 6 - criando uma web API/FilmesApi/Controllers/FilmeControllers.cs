@@ -1,8 +1,8 @@
 namespace FilmesApi.Controllers;
 using FilmesApi.Data;
 using FilmesApi.Data.Dtos;
-using FilmesApi.Profile;
 using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 
 /*Importanto o padrão Mvc para APi*/
 using Microsoft.AspNetCore.Mvc;
@@ -55,6 +55,53 @@ public class FilmeController : ControllerBase
         }else
         {
             return Ok(filme);
+        }
+    }
+
+    [HttpPut("{id}")]
+    /*Está utilizando um FromBody para indicar que as mudanças vão
+    constar no corpo da requisição*/
+    public IActionResult AtualizarFilme (int id, [FromBody] UpdateFilmeDto filmeDto)
+    {
+        var filme = _context.Filmes.FirstOrDefault (filme => filme.Id == id);
+        if (filme == null)
+        {
+            return NotFound("Filme Não encontrado :(");
+        }else
+        {
+            /*Os campos do filmeDto estão sendo mapeados
+            no filme*/
+            _mapper.Map(filmeDto, filme);
+            _context.SaveChanges();
+            /*Por padrão o retorno de uma atualização feita 
+            com sucesso é NoContent*/
+            return NoContent();
+        }
+    }
+
+    [HttpPatch("{id}")]
+
+    public IActionResult AtualizarFilmePatch (int id, 
+        JsonPatchDocument<UpdateFilmeDto> patch)
+    {
+        var filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
+        if (filme == null)
+        {
+            return NotFound("Filme Não encontrado :(");
+        }else
+        {
+            var filmeParaAtualizar = _mapper.Map<UpdateFilmeDto>(filme);
+            patch.ApplyTo(filmeParaAtualizar, ModelState);
+
+            if(!TryValidateModel(filmeParaAtualizar))
+            {
+                return ValidationProblem(ModelState);
+            }else
+            {
+                _mapper.Map(filmeParaAtualizar, filme);
+                _context.SaveChanges();
+                return NoContent();
+            }
         }
     }
 

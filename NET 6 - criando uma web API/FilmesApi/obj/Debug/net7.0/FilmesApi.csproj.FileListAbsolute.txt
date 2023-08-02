@@ -43,3 +43,7 @@
 /home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/NET 6 - criando uma web API/FilmesApi/bin/Debug/net7.0/System.CodeDom.dll
 /home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/NET 6 - criando uma web API/FilmesApi/bin/Debug/net7.0/AutoMapper.dll
 /home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/NET 6 - criando uma web API/FilmesApi/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/NET 6 - criando uma web API/FilmesApi/bin/Debug/net7.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/NET 6 - criando uma web API/FilmesApi/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/NET 6 - criando uma web API/FilmesApi/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/NET 6 - criando uma web API/FilmesApi/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
