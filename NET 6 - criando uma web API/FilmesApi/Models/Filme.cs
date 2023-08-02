@@ -3,6 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 public class Filme
 {
+    public int Id {get; set;}
+    
     [Required(ErrorMessage = "O título do Filme é obrigatório!")]
     public string Titulo {get; set;}
 
