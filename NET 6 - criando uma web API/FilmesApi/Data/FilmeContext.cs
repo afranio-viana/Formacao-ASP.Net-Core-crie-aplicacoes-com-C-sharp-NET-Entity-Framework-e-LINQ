@@ -15,5 +15,6 @@ public class FilmeContext : DbContext
     /*Essa é uma propriedade que permite acesso aos
     filmes que existem na base*/
     public DbSet<Filme> Filmes {get; set;}
+    public DbSet<Cinema> Cinemas {get; set;}
 
 }
