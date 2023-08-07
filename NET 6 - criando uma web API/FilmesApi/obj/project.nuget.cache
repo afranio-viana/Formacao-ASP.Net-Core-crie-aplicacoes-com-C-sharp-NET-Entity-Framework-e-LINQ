@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "AzgM5WeWwmJ8aeI70W8qJLaAzsJLjMBhQRLzim3jZiSttXNdP0V8TkqiDhqaOgBApqMHYsIhfmDDz5KmB/2nOQ==",
+  "dgSpecHash": "AcG3BsxbJqwa9+MCx0kTnnTINv4utimNgTrP3lEUUSTcA21oeuqAgT5yO2RHoKXqUWmpcj3n8bJNIXgeTrNJRg==",
   "success": true,
   "projectFilePath": "/home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/NET 6 - criando uma web API/FilmesApi/FilmesApi.csproj",
   "expectedPackageFiles": [
     "/home/viana/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/viana/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/home/viana/.nuget/packages/castle.core/5.1.0/castle.core.5.1.0.nupkg.sha512",
     "/home/viana/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.aspnetcore.jsonpatch/7.0.9/microsoft.aspnetcore.jsonpatch.7.0.9.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/7.0.9/microsoft.aspnetcore.mvc.newtonsoftjson.7.0.9.nupkg.sha512",
@@ -15,6 +16,7 @@
     "/home/viana/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.9/microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.9/microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.entityframeworkcore.design/7.0.9/microsoft.entityframeworkcore.design.7.0.9.nupkg.sha512",
+    "/home/viana/.nuget/packages/microsoft.entityframeworkcore.proxies/7.0.9/microsoft.entityframeworkcore.proxies.7.0.9.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.9/microsoft.entityframeworkcore.relational.7.0.9.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.entityframeworkcore.tools/7.0.9/microsoft.entityframeworkcore.tools.7.0.9.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
@@ -39,6 +41,7 @@
     "/home/viana/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "/home/viana/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "/home/viana/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
+    "/home/viana/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "/home/viana/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/home/viana/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
   ],

@@ -5,6 +5,8 @@ using FilmesApi.Data.Dtos;
 using FilmesApi.Models;
 
 namespace FilmesApi.Controllers;
+[ApiController]
+[Route("[controller]")]
 
 public class CinemaController : ControllerBase
 {
@@ -23,7 +25,7 @@ public class CinemaController : ControllerBase
         Cinema cinema = _mapper.Map<Cinema>(cinemaDto);
         _context.Cinemas.Add(cinema);
         _context.SaveChanges();
-        return CreatedAtAction(nameof(RecuperarCinemaPorId), new {Id = cinema.Id}, cinemaDto);
+        return CreatedAtAction(nameof(RecuperarCinemaPorId), new {id = cinema.Id}, cinemaDto);
     }
 
     [HttpGet]

@@ -1,4 +1,4 @@
-namespace FilmesApi.Profile;
+namespace FilmesApi.Profiles;
 using AutoMapper;
 using FilmesApi.Data.Dtos;
 using FilmesApi.Models;
