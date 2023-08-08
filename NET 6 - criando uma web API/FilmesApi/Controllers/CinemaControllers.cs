@@ -29,9 +29,10 @@ public class CinemaController : ControllerBase
     }
 
     [HttpGet]
-    public IEnumerable<ReadCinemaDto> RecuperarCinemas()
+    public IEnumerable<ReadCinemaDto> RecuperarCinemas([FromQuery] int skip = 0,
+    [FromQuery] int take = 50)
     {
-        return _mapper.Map<List<ReadCinemaDto>>(_context.Cinemas.ToList());
+        return _mapper.Map<List<ReadCinemaDto>>(_context.Cinemas.Skip(skip).Take(take).ToList());
     }
 
     [HttpGet("{id}")]
