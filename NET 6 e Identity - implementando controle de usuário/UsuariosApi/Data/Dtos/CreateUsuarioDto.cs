@@ -1,10 +1,11 @@
-using System.ConponentModel.DataAnnotations;
-namespace UsuariosApi.Data.Dtos
+using System;
+using System.ComponentModel.DataAnnotations;
+namespace UsuariosApi.Data.Dtos;
 
 public class CreateUsuarioDto
 {
   [Required]
-  public string UserName {get; set;}
+  public string Username {get; set;}
 
   [Required]
   public DateTime DataNascimento {get; set;}  
