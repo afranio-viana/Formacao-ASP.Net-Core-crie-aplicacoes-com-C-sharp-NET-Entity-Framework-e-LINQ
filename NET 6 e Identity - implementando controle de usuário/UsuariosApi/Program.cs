@@ -11,7 +11,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connString = builder.Configuration.GetConnectionString("UsuarioConnection");
+var connString = builder.Configuration["ConnectionStrings:UsuarioConnection"];
 
 builder.Services.AddDbContext<UsuarioDbContext>
 (
