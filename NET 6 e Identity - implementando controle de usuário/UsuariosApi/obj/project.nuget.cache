@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "RS7PsjEn1ccHhx+2LZKFr4GD4Qa4kbllKFmWOwLtawa4mRL7AK/FXdQAI6A7Qc2Ksdp2ENtmMPhfwi/2p8GsWA==",
+  "dgSpecHash": "vrKWPxITHGYkBLrviJ2c8njTusKHaxuhfO6xPTNdtc7QLkbrDLE8k2cVlkqyhk3CfGUlmJdiRUfsV4qliZ6ROQ==",
   "success": true,
   "projectFilePath": "/home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/NET 6 e Identity - implementando controle de usuário/UsuariosApi/UsuariosApi.csproj",
   "expectedPackageFiles": [
     "/home/viana/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/viana/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/home/viana/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/viana/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.10/microsoft.aspnetcore.authentication.jwtbearer.7.0.10.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.10/microsoft.aspnetcore.cryptography.internal.7.0.10.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.10/microsoft.aspnetcore.cryptography.keyderivation.7.0.10.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.10/microsoft.aspnetcore.identity.entityframeworkcore.7.0.10.nupkg.sha512",
@@ -34,6 +35,8 @@
     "/home/viana/.nuget/packages/microsoft.identitymodel.abstractions/6.32.1/microsoft.identitymodel.abstractions.6.32.1.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.32.1/microsoft.identitymodel.jsonwebtokens.6.32.1.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.identitymodel.logging/6.32.1/microsoft.identitymodel.logging.6.32.1.nupkg.sha512",
+    "/home/viana/.nuget/packages/microsoft.identitymodel.protocols/6.15.1/microsoft.identitymodel.protocols.6.15.1.nupkg.sha512",
+    "/home/viana/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.15.1/microsoft.identitymodel.protocols.openidconnect.6.15.1.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.identitymodel.tokens/6.32.1/microsoft.identitymodel.tokens.6.32.1.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
