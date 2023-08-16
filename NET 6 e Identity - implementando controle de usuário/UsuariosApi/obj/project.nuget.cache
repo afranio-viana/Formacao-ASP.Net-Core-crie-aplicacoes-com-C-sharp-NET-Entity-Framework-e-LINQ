@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "N/4+/Gp49aN+RbJVSrBYS/SUXrethVzU12ZDnCRgXjlwJM4VpqrQYTGhuV643GP6qJpDLd3mH3AV1dWMPjRY8w==",
+  "dgSpecHash": "RS7PsjEn1ccHhx+2LZKFr4GD4Qa4kbllKFmWOwLtawa4mRL7AK/FXdQAI6A7Qc2Ksdp2ENtmMPhfwi/2p8GsWA==",
   "success": true,
   "projectFilePath": "/home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/NET 6 e Identity - implementando controle de usuário/UsuariosApi/UsuariosApi.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,12 @@
     "/home/viana/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/home/viana/.nuget/packages/microsoft.identitymodel.abstractions/6.32.1/microsoft.identitymodel.abstractions.6.32.1.nupkg.sha512",
+    "/home/viana/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.32.1/microsoft.identitymodel.jsonwebtokens.6.32.1.nupkg.sha512",
+    "/home/viana/.nuget/packages/microsoft.identitymodel.logging/6.32.1/microsoft.identitymodel.logging.6.32.1.nupkg.sha512",
+    "/home/viana/.nuget/packages/microsoft.identitymodel.tokens/6.32.1/microsoft.identitymodel.tokens.6.32.1.nupkg.sha512",
+    "/home/viana/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/viana/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/home/viana/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
     "/home/viana/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/home/viana/.nuget/packages/mysqlconnector/2.2.5/mysqlconnector.2.2.5.nupkg.sha512",
@@ -40,6 +46,10 @@
     "/home/viana/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "/home/viana/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "/home/viana/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
+    "/home/viana/.nuget/packages/system.identitymodel.tokens.jwt/6.32.1/system.identitymodel.tokens.jwt.6.32.1.nupkg.sha512",
+    "/home/viana/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/home/viana/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "/home/viana/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/home/viana/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/home/viana/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
   ],
