@@ -3,6 +3,7 @@ using GerenciadorDeTarefaApi.Data;
 using GerenciadorDeTarefaApi.Data.Dtos;
 using GerenciadorDeTarefaApi.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace GerenciadorDeTarefaApi.Controllers;
 
@@ -19,6 +20,7 @@ public class TarefaController : ControllerBase
         _mapper = mapper;
     }
 
+    /*Recebe uma TarefaDto e converte em tarefa*/
     [HttpPost]
     public IActionResult AdicionarTarefa ([FromBody] CreateTarefaDto tarefaDto)
     {
@@ -29,6 +31,14 @@ public class TarefaController : ControllerBase
             new{id = tarefa.IdTarefa}, tarefa);
     }
 
+    /*Recebe cada tarefa e transforma em uma lista de ReadTarefaDto*/
+    [HttpGet]
+    public IEnumerable<ReadTarefaDto> RecuperarTarefa ()
+    {
+           return _mapper.Map<List<ReadTarefaDto>>(_context.Tarefas.ToList());
+    }
+    
+    /*Recebe a tarefa e converte em uma ReadTarefaDto*/
     [HttpGet("{id}")]
     public IActionResult RecuperarTarefaPorId(int id)
     {
@@ -40,6 +50,28 @@ public class TarefaController : ControllerBase
         }else
         {
             return NotFound($"Tarefa naõ encontrada");
+        }
+    }
+    [HttpPatch("{id}")]
+    public IActionResult AtualizarTarefaPatch(int id, JsonPatchDocument<UpdateTarefaDto> patch)
+    {
+        var tarefa = _context.Tarefas.FirstOrDefault(tarefa => tarefa.IdTarefa == id);
+        if (tarefa == null)
+        {
+            return NotFound("Tarefa não encontrada :(");
+        }else
+        {
+            var tarefaParaAtualizar = _mapper.Map<UpdateTarefaDto>(tarefa);
+            patch.ApplyTo(tarefaParaAtualizar, ModelState);
+            if(!TryValidateModel(tarefaParaAtualizar))
+            {
+                return ValidationProblem(ModelState);
+            }else
+            {
+                _mapper.Map(tarefaParaAtualizar, tarefa);
+                _context.SaveChanges();
+                return NoContent();
+            }
         }
     }
 }

@@ -49,3 +49,7 @@
 /home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/GerenciadorDeTarefaApi/obj/Debug/net7.0/GerenciadorDeTarefaApi.pdb
 /home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/GerenciadorDeTarefaApi/obj/Debug/net7.0/GerenciadorDeTarefaApi.genruntimeconfig.cache
 /home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/GerenciadorDeTarefaApi/obj/Debug/net7.0/ref/GerenciadorDeTarefaApi.dll
+/home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/GerenciadorDeTarefaApi/bin/Debug/net7.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/GerenciadorDeTarefaApi/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/GerenciadorDeTarefaApi/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/viana/Área de Trabalho/Formacao-ASP.Net-Core-crie-aplicacoes-com-C-sharp-NET-Entity-Framework-e-LINQ/GerenciadorDeTarefaApi/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll

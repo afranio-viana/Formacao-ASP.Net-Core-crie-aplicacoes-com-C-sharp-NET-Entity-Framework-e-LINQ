@@ -9,5 +9,7 @@ public class TarefaProfile : Profile
     {
         CreateMap<CreateTarefaDto, Tarefa>();
         CreateMap<Tarefa,ReadTarefaDto>();
+        CreateMap<Tarefa,UpdateTarefaDto>();
+        CreateMap<UpdateTarefaDto, Tarefa>();
     }
 }
