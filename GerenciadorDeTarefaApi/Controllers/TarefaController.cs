@@ -49,7 +49,7 @@ public class TarefaController : ControllerBase
             return Ok(tarefaDto);
         }else
         {
-            return NotFound($"Tarefa naõ encontrada");
+            return NotFound($"Tarefa não encontrada");
         }
     }
     [HttpPatch("{id}")]
@@ -72,6 +72,21 @@ public class TarefaController : ControllerBase
                 _context.SaveChanges();
                 return NoContent();
             }
+        }
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult DeletarTarefa(int id)
+    {
+        var tarefa = _context.Tarefas.FirstOrDefault(tarefa => tarefa.IdTarefa == id);
+        if (tarefa == null)
+        {
+            return NotFound("Tarefa não encotrada :(");
+        }else
+        {
+            _context.Remove(tarefa);
+            _context.SaveChanges();
+            return NoContent();
         }
     }
 }
