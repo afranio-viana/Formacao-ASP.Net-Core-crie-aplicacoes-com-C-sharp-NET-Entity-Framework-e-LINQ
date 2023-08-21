@@ -35,7 +35,7 @@ public class TarefaController : ControllerBase
     [HttpGet]
     public IEnumerable<ReadTarefaDto> RecuperarTarefa ()
     {
-           return _mapper.Map<List<ReadTarefaDto>>(_context.Tarefas.ToList());
+           return _mapper.Map<List<ReadTarefaDto>>(_context.Tarefas.OrderBy(tarefa => tarefa.StatusTarefa).ToList());
     }
     
     /*Recebe a tarefa e converte em uma ReadTarefaDto*/
