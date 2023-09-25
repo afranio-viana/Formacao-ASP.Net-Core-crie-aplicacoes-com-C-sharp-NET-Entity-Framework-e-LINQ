@@ -1,0 +1,36 @@
+version: '2.20.2'
+services:
+  mysql:
+    image: mysql:latest
+    container_name: meu-mysql2
+    networks:
+      - compose-bridge
+    environment:
+      MYSQL_HOST: meu-mysql2
+      MYSQL_DATABASE: tarefa
+      MYSQL_USER: viana
+      MYSQL_PASSWORD: viana123
+      MYSQL_ROOT_PASSWORD: viana123
+      
+
+  api:
+    image: afranioviana/gerenciador-de-tarefas-api:1.9
+    container_name: api-gerenciador
+    networks:
+      - compose-bridge
+    ports:
+      - 5005:5000
+
+  migrations:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+    environment:
+      ASPNETCORE_CONNECTIONSTRING: "FilmeConnection"
+    command: ["dotnet", "ef", "database", "update"]
+  
+networks:
+  compose-bridge:
+    driver: bridge

@@ -27,7 +27,6 @@ builder.Services
     .AddDefaultTokenProviders();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
 builder.Services.AddAuthentication(options => 
 {
     options.DefaultAuthenticateScheme =
